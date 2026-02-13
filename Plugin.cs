@@ -79,7 +79,11 @@ public class Plugin : BaseUnityPlugin
         if (!_isPlacementMode)
             return;
 
-        _logger.LogInfo("UpdatePlacementMode running...");
+        // Don't update placement while holding the phone
+        if (IsPlayerHoldingPhone())
+        {
+            return; // Skip all placement updates while phone is in hand
+        }
 
         // Get player camera
         var playerCamera = Camera.main;
@@ -132,8 +136,8 @@ public class Plugin : BaseUnityPlugin
         // Update preview positions
         UpdatePreviewPositions();
 
-        // Confirm placement with Left Click or Enter
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        // Confirm placement with Enter or Left Click
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetMouseButtonDown(0))
         {
             _logger.LogInfo("Confirm placement triggered");
             ConfirmPlacement();
@@ -144,6 +148,31 @@ public class Plugin : BaseUnityPlugin
         {
             _logger.LogInfo("Cancel placement triggered");
             CancelPlacement();
+        }
+    }
+
+    private static bool IsPlayerHoldingPhone()
+    {
+        try
+        {
+            // Find all phones in the scene
+            var phones = Object.FindObjectsOfType<Furniture_Phone>();
+            
+            foreach (var phone in phones)
+            {
+                // Check the AppareilleInPlayerHand field
+                if (phone.AppareilleInPlayerHand)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+        catch (System.Exception ex)
+        {
+            _logger.LogError($"Error checking phone state: {ex.Message}");
+            return false;
         }
     }
 

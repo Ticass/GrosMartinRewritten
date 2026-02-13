@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrosMartinRewritten")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d9c1d0317c28354fb452624326b08a709e00875")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dff96e49a538477a4ad539fea5a6e91cbd9a43d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("My first plugin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrosMartinRewritten")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
