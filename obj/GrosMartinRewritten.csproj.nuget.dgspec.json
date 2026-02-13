@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ModsMonBazou\\GrosMartinRewritten\\GrosMartinRewritten.csproj": {}
+    "C:\\Users\\thrif\\RiderProjects\\GrosMartinRewritten\\GrosMartinRewritten.csproj": {}
   },
   "projects": {
-    "D:\\ModsMonBazou\\GrosMartinRewritten\\GrosMartinRewritten.csproj": {
+    "C:\\Users\\thrif\\RiderProjects\\GrosMartinRewritten\\GrosMartinRewritten.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ModsMonBazou\\GrosMartinRewritten\\GrosMartinRewritten.csproj",
+        "projectUniqueName": "C:\\Users\\thrif\\RiderProjects\\GrosMartinRewritten\\GrosMartinRewritten.csproj",
         "projectName": "GrosMartinRewritten",
-        "projectPath": "D:\\ModsMonBazou\\GrosMartinRewritten\\GrosMartinRewritten.csproj",
+        "projectPath": "C:\\Users\\thrif\\RiderProjects\\GrosMartinRewritten\\GrosMartinRewritten.csproj",
         "packagesPath": "C:\\Users\\thrif\\.nuget\\packages\\",
-        "outputPath": "D:\\ModsMonBazou\\GrosMartinRewritten\\obj\\",
+        "outputPath": "C:\\Users\\thrif\\RiderProjects\\GrosMartinRewritten\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thrif\\AppData\\Roaming\\NuGet\\NuGet.Config"

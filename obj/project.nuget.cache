@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w40nsg+ty4A=",
+  "dgSpecHash": "55QHNhunBpY=",
   "success": true,
-  "projectFilePath": "D:\\ModsMonBazou\\GrosMartinRewritten\\GrosMartinRewritten.csproj",
+  "projectFilePath": "C:\\Users\\thrif\\RiderProjects\\GrosMartinRewritten\\GrosMartinRewritten.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thrif\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",
     "C:\\Users\\thrif\\.nuget\\packages\\bepinex.baselib\\5.4.20\\bepinex.baselib.5.4.20.nupkg.sha512",
